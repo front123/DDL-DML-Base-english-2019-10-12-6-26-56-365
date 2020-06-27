@@ -1,11 +1,11 @@
 -- Insert record
-insert into teacher(id, name) values(101, 'Mike');
+insert into student(id, name, age, sex) values(3, 'Mike', 19, 'male');
 
 -- Revise record
-update teacher set name='John' where id=101;
+update student set name='John' where id=3;
 
 --  Delete record
-delete from teacher where id=101;
+delete from student where id=3;
 
 -- Search record
-select * from teacher where id=101;
+select * from student where id=2;
