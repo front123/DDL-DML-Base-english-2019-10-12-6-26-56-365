@@ -25,22 +25,22 @@ drop database library_sys;
 alter table student rename to high_student;
 
 -- Revise the field's data type
-alter table teacher modify column name varchar(20);
+alter table student modify column name varchar(20);
 
 -- Revise field name
-alter table teacher change column name last_name varchar(20);
+alter table student change column name last_name varchar(20);
 
 -- Add field
-alter table teacher add column age int(3);
+alter table student add column weight int(4);
 
 -- Delete field
-alter table teacher drop column age;
+alter table student drop column age;
 
 -- Revise the table's storage engine
-alter table teacher engine=InnoDB;
+alter table student engine=InnoDB;
 
 -- Delete the table's foreign key restriant
-alter table teacher drop foreign key fk_course_id;
+alter table student drop foreign key fk_class_id;
 
 -- Delete a table
-drop table teacher;
+drop table student;
